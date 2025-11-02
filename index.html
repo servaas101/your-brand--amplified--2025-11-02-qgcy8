@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your Brand. Amplified. - Professional media and brand strategy services to boost visibility, build trust, and grow sales.">
+    <meta name="keywords" content="brand strategy, media content, audience reach, digital marketing">
+    <meta name="author" content="Emet Media House">
+    <title>Your Brand. Amplified. | Emet Media House</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 100%);
+        }
+        
+        .feature-card {
+            transition: all 300ms ease-in-out;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-8px);
+        }
+        
+        .testimonial-card {
+            transition: all 300ms ease-in-out;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.02);
+        }
+        
+        .btn-primary {
+            transition: all 300ms ease-in-out;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+        }
+        
+        .faq-item {
+            transition: all 300ms ease-in-out;
+        }
+        
+        .faq-toggle {
+            transition: all 300ms ease-in-out;
+        }
+        
+        .mobile-menu {
+            transition: all 300ms ease-in-out;
+            max-height: 0;
+            overflow: hidden;
+        }
+        
+        .mobile-menu.active {
+            max-height: 500px;
+        }
+        
+        .star-rating {
+            color: #fbbf24;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+    <!-- Announcement Bar -->
+    <div class="bg-gray-900 text-white py-3 px-4 md:px-0">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-sm md:text-base flex items-center justify-center gap-2">
+                <i class="fas fa-truck text-yellow-400"></i>
+                Fast Worldwide Shipping (5 days delivery)
+            </p>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">EM</span>
+                    </div>
+                    <span class="font-bold text-xl text-gray-900 hidden sm:inline">Emet</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="#home" class="text-gray-700 hover:text-gray-900 font-medium text-sm transition-colors duration-300">Home</a>
+                    <a href="#features" class="text-gray-700 hover:text-gray-900 font-medium text-sm transition-colors duration-300">Features</a>
+                    <a href="#benefits" class="text-gray-700 hover:text-gray-900 font-medium text-sm transition-colors duration-300">Benefits</a>
+                    <a href="#about" class="text-gray-700 hover:text-gray-900 font-medium text-sm transition-colors duration-300">About</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-gray-900 font-medium text-sm transition-colors duration-300">Testimonials</a>
+                    <a href="#faq" class="text-gray-700 hover:text-gray-900 font-medium text-sm transition-colors duration-300">FAQ</a>
+                    <a href="#contact" class="text-gray-700 hover:text-gray-900 font-medium text-sm transition-colors duration-300">Contact</a>
+                </nav>
+
+                <!-- Search and CTA -->
+                <div class="flex items-center gap-4">
+                    <div class="hidden sm:flex items-center bg-gray-100 rounded-lg px-3 py-2">
+                        <input type="text" placeholder="Search..." class="bg-gray-100 outline-none text-sm w-32 md:w-40">
+                        <i class="fas fa-search text-gray-500 ml-2"></i>
+                    </div>
+                    <a href="/services" class="btn-primary hidden sm:inline-block bg-gray-900 text-white px-6 py-2 rounded-lg font-medium text-sm hover:bg-gray-800">
+                        Get Started
+                    </a>
+                    <button class="mobile-menu-button md:hidden text-gray-900 text-2xl" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-menu md:hidden bg-white border-t border-gray-200">
+            <nav class="flex flex-col gap-0 p-4">
+                <a href="#home" class="text-gray-700 hover:text-gray-900 font-medium py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors duration-300">Home</a>
+                <a href="#features" class="text-gray-700 hover:text-gray-900 font-medium py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors duration-300">Features</a>
+                <a href="#benefits" class="text-gray-700 hover:text-gray-900 font-medium py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors duration-300">Benefits</a>
+                <a href="#about" class="text-gray-700 hover:text-gray-900 font-medium py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors duration-300">About</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-gray-900 font-medium py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors duration-300">Testimonials</a>
+                <a href="#faq" class="text-gray-700 hover:text-gray-900 font-medium py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors duration-300">FAQ</a>
+                <a href="#contact" class="text-gray-700 hover:text-gray-900 font-medium py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors duration-300">Contact</a>
+                <a href="/services" class="btn-primary bg-gray-900 text-white px-6 py-3 rounded-lg font-medium mt-4 text-center hover:bg-gray-800">
+                    Get Started
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen md:h-[600px] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1504093376055-b3094b674dcb?w=1600&h=900&fit=crop&q=80" alt="Brand amplification" class="w-full h-full object-cover">
+            <div class="hero-overlay absolute inset-0"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-4 md:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight tracking-tight">
+                Your Brand. Amplified.
+            </h1>
+            <p class="text-xl md:text-2xl lg:text-3xl text-gray-100 mb-8 leading-relaxed font-light">
+                Make your message impossible to ignore.
+            </p>
+            <a href="/services" class="btn-primary inline-block bg-yellow-400 text-gray-900 px-8 md:px-12 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 shadow-lg hover:shadow-xl">
+                Start Your Journey <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Our Core Capabilities
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Comprehensive solutions designed to elevate your brand presence and drive meaningful results.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1: Brand Strategy -->
+                <div class="feature-card bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl hover:border-gray-300">
+                    <div class="w-14 h-14 bg-gray-900 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-lightbulb text-yellow-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">Brand Strategy</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Develop a comprehensive brand strategy that resonates with your target audience, differentiates you from competitors, and creates lasting emotional connections with your customers.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3 text-gray-700">
+                            <i class="fas fa-check text-yellow-400 font-bold"></i>
+                            Market positioning
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700">
+                            <i class="fas fa-check text-yellow-400 font-bold"></i>
+                            Competitive analysis
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700">
+                            <i class="fas fa-check text-yellow-400 font-bold"></i>
+                            Brand guidelines
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2: Media Content -->
+                <div class="feature-card bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl hover:border-gray-300">
+                    <div class="w-14 h-14 bg-gray-900 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-film text-yellow-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">Media Content</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Create compelling multimedia content that captures attention, tells your brand story, and drives engagement across all digital platforms and channels.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3 text-gray-700">
+                            <i class="fas fa-check text-yellow-400 font-bold"></i>
+                            Video production
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700">
+                            <i class="fas fa-check text-yellow-400 font-bold"></i>
+                            Photography services
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700">
+                            <i class="fas fa-check text-yellow-400 font-bold"></i>
+                            Social media assets
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3: Audience Reach -->
+                <div class="feature-card bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl hover:border-gray-300">
+                    <div class="w-14 h-14 bg-gray-900 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-yellow-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">Audience Reach</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Expand your reach to the right audience through strategic distribution, targeted campaigns, and data-driven insights that maximize your brand visibility.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3 text-gray-700">
+                            <i class="fas fa-check text-yellow-400 font-bold"></i>
+                            Audience targeting
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700">
+                            <i class="fas fa-check text-yellow-400 font-bold"></i>
+                            Distribution strategy
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700">
+                            <i class="fas fa-check text-yellow-400 font-bold"></i>
+                            Analytics & reporting
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section - Boost Visibility -->
+    <section id="benefits" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24">
+                <div class="order-2 md:order-1">
+                    <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" alt="Boost visibility" class="w-full h-auto rounded-xl shadow-lg object-cover">
+                </div>
+                <div class="order-1 md:order-2">
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
+                        Boost Visibility
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Stand out in a crowded marketplace with strategic brand amplification. Our proven methods ensure your message reaches the right people at the right time, creating unprecedented brand awareness and recognition.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-4">
+                            <div class="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-gray-900 text-sm font-bold"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Multi-channel presence</h4>
+                                <p class="text-gray-600">Consistent brand messaging across all platforms</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-gray-900 text-sm font-bold"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Strategic positioning</h4>
+                                <p class="text-gray-600">Targeted campaigns that reach your ideal customers</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-gray-900 text-sm font-bold"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Measurable results</h4>
+                                <p class="text-gray-600">Track and optimize performance with detailed analytics</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="/services" class="btn-primary inline-block bg-gray-900 text-white px-8 py-3 rounded-lg font-bold hover:bg-gray-800 shadow-md hover:shadow-lg">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section - Build Trust -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24">
+                <div>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
+                        Build Trust
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Establish credibility and foster long-term relationships with your audience. Through authentic storytelling, consistent messaging, and transparent communication, we help you build a brand that customers genuinely trust and advocate for.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-4">
+                            <div class="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-gray-900 text-sm font-bold"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Authentic storytelling</h4>
+                                <p class="text-gray-600">Share your brand's unique narrative and values</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-gray-900 text-sm font-bold"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Community engagement</h4>
+                                <p class="text-gray-600">Build meaningful connections with your audience</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-gray-900 text-sm font-bold"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Reputation management</h4>
+                                <p class="text-gray-600">Protect and enhance your brand's online reputation</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="/services" class="btn-primary inline-block bg-gray-900 text-white px-8 py-3 rounded-lg font-bold hover:bg-gray-800 shadow-md hover:shadow-lg">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=800&h=600&fit=crop&q=80" alt="Build trust" class="w-full h-auto rounded-xl shadow-lg object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section - Grow Sales -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=800&h=600&fit=crop&q=80" alt="Grow sales" class="w-full h-auto rounded-xl shadow-lg object-cover">
+                </div>
+                <div class="order-1 md:order-2">
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
+                        Grow Sales
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Transform your brand visibility into measurable revenue growth. Our data-driven approach combines strategic marketing, compelling content, and conversion optimization to drive sustainable business growth and maximize your return on investment.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-4">
+                            <div class="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-gray-900 text-sm font-bold"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Conversion optimization</h4>
+                                <p class="text-gray-600">Maximize sales from your existing traffic</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-gray-900 text-sm font-bold"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Customer retention</h4>
+                                <p class="text-gray-600">Build loyalty and repeat business</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-gray-900 text-sm font-bold"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-1">Revenue scaling</h4>
+                                <p class="text-gray-600">Sustainable growth strategies for long-term success</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="/services" class="btn-primary inline-block bg-gray-900 text-white px-8 py-3 rounded-lg font-bold hover:bg-gray-800 shadow-md hover:shadow-lg">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    About Emet Media House
+                </h2>
+                <p class="text-lg text-gray-600">
+                    Pioneering brand amplification since our founding
+                </p>
+            </div>
+
+            <div class="bg-white rounded-xl p-8 md:p-12 shadow-md">
+                <div class="mb-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Story</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        Founded with a passion for transforming brands, Emet Media House emerged from the recognition that businesses needed more than traditional marketing services. We started as a small team of creative professionals who believed that every brand has a unique story worth telling. Over the years, we've evolved into a comprehensive media and brand strategy firm, working with businesses across diverse industries to amplify their presence and achieve their goals. Our journey has been marked by countless success stories, from startup launches to established brand transformations, each reinforcing our commitment to excellence and innovation.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Mission & Vision</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Our mission is to empower businesses by creating authentic, compelling brand narratives that resonate with their audiences and drive measurable results. We are committed to combining strategic thinking with creative excellence, delivering solutions that not only meet but exceed expectations. We envision a world where every brand—regardless of size or industry—has access to world-class media and marketing expertise. Our core values of integrity, innovation, and impact guide everything we do, ensuring that our clients receive not just services, but true partnerships dedicated to their long-term success and growth.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-gray-900 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&h=900&fit=crop&q=80" alt="Background" class="w-full h-full object-cover">
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 md:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tight">
+                Ready to Amplify Your Brand?
+            </h2>
+            <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                Let's work together to create a brand presence that captures attention, builds trust, and drives real business results.
+            </p>
+            <a href="/services" class="btn-primary inline-block bg-yellow-400 text-gray-900 px-8 md:px-12 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 shadow-lg hover:shadow-xl">
+                Get Started Today <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    What Our Clients Say
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Real results from real businesses that trusted us with their brand growth.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl hover:border-gray-300">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "Emet Media House completely transformed how we present our brand. Their strategic approach to brand positioning and media content creation helped us increase our social media engagement by 340% within six months. The team was professional, creative, and truly understood our vision. They didn't just deliver services; they became an extension of our team."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center text-white font-bold">
+                            JM
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Jessica Martinez</p>
+                            <p class="text-sm text-gray-600">Marketing Director, TechStart Inc.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl hover:border-gray-300">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "Working with Emet Media House was a game-changer for our e-commerce business. Their audience reach strategy helped us tap into new customer segments we didn't know existed. Sales increased by 215% in the first quarter after implementing their recommendations. Their data-driven approach and creative execution are unmatched."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-500 rounded-full flex items-center justify-center text-white font-bold">
+                            RP
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Robert Patterson</p>
+                            <p class="text-sm text-gray-600">CEO, Fashion Forward Co.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl hover:border-gray-300">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "The brand strategy work Emet Media House did for us was incredibly thorough and insightful. They helped us identify our unique value proposition and communicate it effectively across all channels. Our brand trust metrics improved significantly, and we've seen a marked increase in customer loyalty and retention rates. Highly recommended!"
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-green-500 rounded-full flex items-center justify-center text-white font-bold">
+                            SK
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Sarah Kim</p>
+                            <p class="text-sm text-gray-600">Founder, Wellness & Co.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl hover:border-gray-300">
+                    <div class="flex items-center gap-1 mb-4">
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        "Outstanding service from start to finish. Emet Media House's media content creation is exceptional—our video content alone generated over 2 million views. Their team understood our brand voice perfectly and created content that genuinely resonated with our audience. The ROI has been phenomenal, and we're already planning our next phase with them."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-500 rounded-full flex items-center justify-center text-white font-bold">
+                            MR
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Marcus Rodriguez</p>
+                            <p class="text-sm text-gray-600">Head of Content, Digital Media Group</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-lg text-gray-600">
+                    Find answers to common questions about our services and process.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-white border border-gray-200 rounded-xl overflow-hidden hover:border-gray-300 transition-all duration-300">
+                    <button class="faq-toggle w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-300" onclick="toggleFAQ(this)">
+                        <h3 class="text-lg font-bold text-gray-900">
+                            What services does Emet Media House offer?
+                        </h3>
+                        <i class="fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="px-8 py-6 border-t border-gray-200 bg-gray-50">
+                            <p class="text-gray-700 leading-relaxed">
+                                Emet Media House provides comprehensive brand and media solutions including brand strategy development, media content creation (video, photography, and social media assets), and audience reach optimization. Our services are designed to help businesses amplify their brand presence, build customer trust, and drive measurable sales growth. We work with businesses of all sizes, from startups to established enterprises, tailoring our approach to meet each client's unique needs and goals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-white border border-gray-200 rounded-xl overflow-hidden hover:border-gray-300 transition-all duration-300">
+                    <button class="faq-toggle w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-300" onclick="toggleFAQ(this)">
+                        <h3 class="text-lg font-bold text-gray-900">
+                            How long does it typically take to see results?
+                        </h3>
+                        <i class="fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="px-8 py-6 border-t border-gray-200 bg-gray-50">
+                            <p class="text-gray-700 leading-relaxed">
+                                Results vary depending on the services and your specific goals, but most clients see initial improvements within 4-8 weeks. Brand awareness campaigns typically show quick traction, while deeper brand positioning and audience development strategies may take 3-6 months to fully mature. We provide detailed reporting and analytics so you can track progress every step of the way. Our team works closely with you to set realistic expectations and optimize performance continuously.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-white border border-gray-200 rounded-xl overflow-hidden hover:border-gray-300 transition-all duration-300">
+                    <button class="faq-toggle w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-300" onclick="toggleFAQ(this)">
+                        <h3 class="text-lg font-bold text-gray-900">
+                            Do you work with businesses in all industries?
+                        </h3>
+                        <i class="fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="px-8 py-6 border-t border-gray-200 bg-gray-50">
+                            <p class="text-gray-700 leading-relaxed">
+                                Yes! We have extensive experience across diverse industries including technology, e-commerce, wellness, finance, real estate, hospitality, and more. Our team brings deep market knowledge and adaptability to every project. We take time to understand your industry-specific challenges, competitive landscape, and audience behavior. This allows us to create strategies and content that are not just effective, but specifically tailored to resonate with your target market and drive results in your particular industry.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-white border border-gray-200 rounded-xl overflow-hidden hover:border-gray-300 transition-all duration-300">
+                    <button class="faq-toggle w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-300" onclick="toggleFAQ(this)">
+                        <h3 class="text-lg font-bold text-gray-900">
+                            What is your pricing structure and how do I get started?
+                        </h3>
+                        <i class="fas fa-chevron-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="px-8 py-6 border-t border-gray-200 bg-gray-50">
+                            <p class="text-gray-700 leading-relaxed">
+                                Our pricing is flexible and customized based on your specific needs, project scope, and goals. We offer various engagement models including project-based work, retainer partnerships, and hybrid arrangements. To get started, simply reach out to us at info@emetmediahouse.co.za or click the "Get Started" button on our website. We'll schedule a consultation to understand your business, challenges, and objectives, then provide a tailored proposal with transparent pricing and clear deliverables.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                    Get In Touch
+                </h2>
+                <p class="text-lg text-gray-600">
+                    Ready to amplify your brand? Contact us today.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-gray-50 rounded-xl p-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Send us a message</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-bold text-gray-900 mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-900 focus:ring-1 focus:ring-gray-900 transition-colors duration-300" placeholder="Your name">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-bold text-gray-900 mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-900 focus:ring-1 focus:ring-gray-900 transition-colors duration-300" placeholder="your@email.com">
+                        </div>
+                        <div>
+                            <label for="company" class="block text-sm font-bold text-gray-900 mb-2">Company</label>
+                            <input type="text" id="company" name="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-900 focus:ring-1 focus:ring-gray-900 transition-colors duration-300" placeholder="Your company">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-bold text-gray-900 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-900 focus:ring-1 focus:ring-gray-900 transition-colors duration-300 resize-none" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full bg-gray-900 text-white px-6 py-3 rounded-lg font-bold hover:bg-gray-800 shadow-md hover:shadow-lg">
+                            Send Message <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="flex flex-col justify-center gap-8">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-yellow-400 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-envelope text-gray-900 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 mb-1">Email</h4>
+                            <a href="mailto:info@emetmediahouse.co.za" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+                                info@emetmediahouse.co.za
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-yellow-400 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-map-marker-alt text-gray-900 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 mb-1">Location</h4>
+                            <p class="text-gray-600">
+                                South Africa
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-yellow-400 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-clock text-gray-900 text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 mb-1">Response Time</h4>
+                            <p class="text-gray-600">
+                                We typically respond within 24 hours
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pt-8 border-t border-gray-200">
+                        <h4 class="font-bold text-gray-900 mb-4">Follow Us</h4>
+                        <div class="flex gap-4">
+                            <a href="#" class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-900 hover:text-white transition-all duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-900 hover:text-white transition-all duration-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-900 hover:text-white transition-all duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-900 hover:text-white transition-all duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-yellow-400 rounded-lg flex items-center justify-center">
+                            <span class="text-gray-900 font-bold text-lg">EM</span>
+                        </div>
+                        <span class="font-bold text-xl text-white">Emet Media House</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Amplifying brands and driving growth through strategic media and content solutions.
+                    </p>
+                    <p class="text-sm text-gray-500">
+                        © 2024 Emet Media House. All rights reserved.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold text-white mb-6 text-lg">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#home" class="text-gray-400 hover:text-white transition-colors duration-300">Home</a>
+                        </li>
+                        <li>
+                            <a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Features</a>
+                        </li>
+                        <li>
+                            <a href="#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Benefits</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="font-bold text-white mb-6 text-lg">Services</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="/services" class="text-gray-400 hover:text-white transition-colors duration-300">Brand Strategy</a>
+                        </li>
+                        <li>
+                            <a href="/services" class="text-gray-400 hover:text-white transition-colors duration-300">Media Content</a>
+                        </li>
+                        <li>
+                            <a href="/services" class="text-gray-400 hover:text-white transition-colors duration-300">Audience Reach</a>
+                        </li>
+                        <li>
+                            <a href="#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Legal & Resources -->
+                <div>
+                    <h4 class="font-bold text-white mb-6 text-lg">Resources</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
+                        </li>
+                        <li>
+                            <a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Divider -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                    <p class="text-gray-500 text-sm text-center md:text-left">
+                        100% Satisfaction Guarantee - Full refund upon return
+                    </p>
+                    <div class="flex gap-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" title="Facebook">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" title="Twitter">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" title="Instagram">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" title="LinkedIn">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            mobileMenu.classList.toggle('active');
+        }
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.mobile-menu').classList.remove('active');
+            });
+        });
+
+        // FAQ Toggle
+        function toggleFAQ(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+
+            // Close all other FAQs
+            document.querySelectorAll('.faq-content').forEach(item => {
+                item.style.maxHeight = '0px';
+            });
+
+            document.querySelectorAll('.faq-toggle i').forEach(i => {
+                i.style.transform = 'rotate(0deg)';
+            });
+
+            // Toggle current FAQ
+            if (!isOpen) {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.style.maxHeight = '0px';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 10) {
+                header.classList.add('shadow-md');
+            } else {
+                header.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body>
+</html>

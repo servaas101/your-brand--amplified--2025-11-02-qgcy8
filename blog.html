@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Emet Media House Blog - Expert insights on brand strategy, media content creation, and audience growth. Learn how to amplify your brand's presence.">
+    <meta name="keywords" content="brand strategy, media content, audience reach, digital marketing, blog">
+    <meta name="author" content="Emet Media House">
+    <title>Blog - Your Brand. Amplified. | Emet Media House</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 100%);
+        }
+        
+        .feature-card {
+            transition: all 300ms ease-in-out;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-8px);
+        }
+        
+        .blog-card {
+            transition: all 300ms ease-in-out;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-8px);
+        }
+        
+        .testimonial-card {
+            transition: all 300ms ease-in-out;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.02);
+        }
+        
+        .btn-primary {
+            transition: all 300ms ease-in-out;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+        }
+        
+        .faq-item {
+            transition: all 300ms ease-in-out;
+        }
+        
+        .faq-toggle {
+            transition: all 300ms ease-in-out;
+        }
+        
+        .mobile-menu {
+            transition: all 300ms ease-in-out;
+            max-height: 0;
+            overflow: hidden;
+        }
+        
+        .mobile-menu.active {
+            max-height: 500px;
+        }
+        
+        .star-rating {
+            color: #fbbf24;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+    <!-- Announcement Bar -->
+    <div class="bg-gray-900 text-white py-3 px-4 md:px-0">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-sm md:text-base flex items-center justify-center gap-2">
+                <i class="fas fa-truck text-yellow-400"></i>
+                Fast Worldwide Shipping (5 days delivery)
+            </p>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <a href="https://servaas101.github.io/your-brand--amplified--2025-11-02-qgcy8" class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">EM</span>
+                    </div>
+                    <span class="font-bold text-xl text-gray-900 hidden sm:inline">Emet</span>
+                </a>
+
+                <!-- Back Link -->
+                <a href="https://servaas101.github.io/your-brand--amplified--2025-11-02-qgcy8" class="text-gray-700 hover:text-gray-900 font-medium text-sm transition-colors duration-300">
+                    ← Back
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Hero Section -->
+    <section class="py-16 md:py-24 bg-gray-50 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+                    Our Blog
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Insights, strategies, and actionable advice to help you amplify your brand presence, build authentic connections with your audience, and drive sustainable business growth.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Purpose Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-8 md:p-12 border border-gray-200">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+                    What You'll Find Here
+                </h2>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    Welcome to the Emet Media House Blog, your go-to resource for expert insights on brand strategy, digital marketing, media content creation, and audience engagement. Our blog is designed to empower businesses of all sizes with practical knowledge and proven strategies that deliver real results.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <i class="fas fa-check text-gray-900 text-sm font-bold"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2">Brand Strategy Guides</h3>
+                            <p class="text-gray-600">Deep dives into positioning, differentiation, and building lasting brand equity.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <i class="fas fa-check text-gray-900 text-sm font-bold"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2">Content Creation Tips</h3>
+                            <p class="text-gray-600">Best practices for video, photography, and social media content that converts.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <i class="fas fa-check text-gray-900 text-sm font-bold"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2">Audience Growth Strategies</h3>
+                            <p class="text-gray-600">Proven methods to reach, engage, and retain your target audience effectively.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                            <i class="fas fa-check text-gray-900 text-sm font-bold"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-2">Case Studies & Success Stories</h3>
+                            <p class="text-gray-600">Real-world examples of how brands transformed their market presence.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Blog Post Section -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 tracking-tight">
+                Latest Articles
+            </h2>
+
+            <!-- Featured Post -->
+            <div class="blog-card bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl hover:border-gray-300 mb-16">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+                    <!-- Featured Image -->
+                    <div class="h-80 md:h-auto bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&q=80" alt="Getting Started with Our Platform" class="w-full h-full object-cover">
+                    </div>
+                    
+                    <!-- Featured Content -->
+                    <div class="p-8 md:p-12 flex flex-col justify-center">
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="inline-block bg-yellow-400 text-gray-900 px-3 py-1 rounded-full text-sm font-bold">
+                                Featured
+                            </span>
+                            <span class="text-sm text-gray-600">
+                                <i class="fas fa-calendar-alt mr-2"></i>November 2, 2025
+                            </span>
+                        </div>
+                        
+                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
+                            Getting Started with Our Platform
+                        </h3>
+                        
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Discover how to transform your brand's market presence through strategic amplification. This comprehensive guide covers six essential pillars: establishing a strong brand foundation with clear mission and values, deeply understanding your target audience's pain points and preferences, developing diverse content across multiple formats, leveraging multi-channel distribution strategies, building authentic community relationships, and continuously measuring results through data-driven optimization.
+                        </p>
+                        
+                        <p class="text-gray-600 leading-relaxed mb-8">
+                            Learn why authenticity matters more than volume in today's competitive landscape, and how successful brands create genuine connections that turn customers into advocates. Your roadmap to sustainable growth and industry authority starts here.
+                        </p>
+                        
+                        <a href="https://servaas101.github.io/your-brand--amplified--2025-11-02-qgcy8/blog/getting-started-with-our-platform.html" class="btn-primary inline-flex items-center bg-gray-900 text-white px-6 py-3 rounded-lg font-bold hover:bg-gray-800 shadow-md hover:shadow-lg w-fit">
+                            Read Full Article <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Posts Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Post Placeholder 1 -->
+                <div class="blog-card bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl hover:border-gray-300 opacity-50">
+                    <div class="h-48 bg-gray-200 rounded-lg mb-6 flex items-center justify-center">
+                        <i class="fas fa-image text-gray-400 text-4xl"></i>
+                    </div>
+                    <span class="inline-block text-sm text-gray-500 mb-3">
+                        <i class="fas fa-calendar-alt mr-2"></i>Coming Soon
+                    </span>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">
+                        More Articles Coming Soon
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        We're working on more insightful content to help you grow your brand. Check back soon for new articles on strategy, content creation, and audience engagement.
+                    </p>
+                </div>
+
+                <!-- Post Placeholder 2 -->
+                <div class="blog-card bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl hover:border-gray-300 opacity-50">
+                    <div class="h-48 bg-gray-200 rounded-lg mb-6 flex items-center justify-center">
+                        <i class="fas fa-image text-gray-400 text-4xl"></i>
+                    </div>
+                    <span class="inline-block text-sm text-gray-500 mb-3">
+                        <i class="fas fa-calendar-alt mr-2"></i>Coming Soon
+                    </span>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">
+                        More Articles Coming Soon
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        We're working on more insightful content to help you grow your brand. Check back soon for new articles on strategy, content creation, and audience engagement.
+                    </p>
+                </div>
+
+                <!-- Post Placeholder 3 -->
+                <div class="blog-card bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl hover:border-gray-300 opacity-50">
+                    <div class="h-48 bg-gray-200 rounded-lg mb-6 flex items-center justify-center">
+                        <i class="fas fa-image text-gray-400 text-4xl"></i>
+                    </div>
+                    <span class="inline-block text-sm text-gray-500 mb-3">
+                        <i class="fas fa-calendar-alt mr-2"></i>Coming Soon
+                    </span>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">
+                        More Articles Coming Soon
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        We're working on more insightful content to help you grow your brand. Check back soon for new articles on strategy, content creation, and audience engagement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 bg-gray-900 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&h=900&fit=crop&q=80" alt="Background" class="w-full h-full object-cover">
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 md:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tight">
+                Ready to Amplify Your Brand?
+            </h2>
+            <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                Subscribe to our blog for the latest insights, or contact us to discuss how we can help transform your brand presence.
+            </p>
+            <a href="https://servaas101.github.io/your-brand--amplified--2025-11-02-qgcy8" class="btn-primary inline-block bg-yellow-400 text-gray-900 px-8 md:px-12 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 shadow-lg hover:shadow-xl">
+                Get Started Today <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-yellow-400 rounded-lg flex items-center justify-center">
+                            <span class="text-gray-900 font-bold text-lg">EM</span>
+                        </div>
+                        <span class="font-bold text-xl text-white">Emet Media House</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Amplifying brands and driving growth through strategic media and content solutions.
+                    </p>
+                    <p class="text-sm text-gray-500">
+                        © 2024 Emet Media House. All rights reserved.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold text-white mb-6 text-lg">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="https://servaas101.github.io/your-brand--amplified--2025-11-02-qgcy8" class="text-gray-400 hover:text-white transition-colors duration-300">Home</a>
+                        </li>
+                        <li>
+                            <a href="https://servaas101.github.io/your-brand--amplified--2025-11-02-qgcy8#features" class="text-gray-400 hover:text-white transition-colors duration-300">Features</a>
+                        </li>
+                        <li>
+                            <a href="https://servaas101.github.io/your-brand--amplified--2025-11-02-qgcy8#benefits" class="text-gray-400 hover:text-white transition-colors duration-300">Benefits</a>
+                        </li>
+                        <li>
+                            <a href="https://servaas101.github.io/your-brand--amplified--2025-11-02-qgcy8#about" class="text-gray-400 hover:text-white transition-colors duration-300">About Us</a>
+                        </li>
+                        <li>
+                            <a href="https://servaas101.github.io/your-brand--amplified--2025-11-02-qgcy8#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="font-bold text-white mb-6 text-lg">Services</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="https://servaas101.github.io/your-brand--amplified--2025-11-02-qgcy8/services" class="text-gray-400 hover:text-white transition-colors duration-300">Brand Strategy</a>
+                        </li>
+                        <li>
+                            <a href="https://servaas101.github.io/your-brand--amplified--2025-11-02-qgcy8/services" class="text-gray-400 hover:text-white transition-colors duration-300">Media Content</a>
+                        </li>
+                        <li>
+                            <a href="https://servaas101.github.io/your-brand--amplified--2025-11-02-qgcy8/services" class="text-gray-400 hover:text-white transition-colors duration-300">Audience Reach</a>
+                        </li>
+                        <li>
+                            <a href="https://servaas101.github.io/your-brand--amplified--2025-11-02-qgcy8#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="https://servaas101.github.io/your-brand--amplified--2025-11-02-qgcy8#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Legal & Resources -->
+                <div>
+                    <h4 class="font-bold text-white mb-6 text-lg">Resources</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
+                        </li>
+                        <li>
+                            <a href="blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a>
+                        </li>
+                        <li>
+                            <a href="https://servaas101.github.io/your-brand--amplified--2025-11-02-qgcy8#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Divider -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                    <p class="text-gray-500 text-sm text-center md:text-left">
+                        100% Satisfaction Guarantee - Full refund upon return
+                    </p>
+                    <div class="flex gap-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" title="Facebook">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" title="Twitter">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" title="Instagram">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300" title="LinkedIn">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 10) {
+                header.classList.add('shadow-md');
+            } else {
+                header.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body>
+</html>
